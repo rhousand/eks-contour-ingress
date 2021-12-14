@@ -4,12 +4,12 @@ metadata:
   name: cert
   namespace: projectcontour
   annotations:
-    fluxcd.io/ignore: "true"
+    fluxcd.io/ignore: "false"
 spec:
   secretName: cert
-  commonName: "*.example.com"
+  commonName: "*.trinity-healthware.com"
   dnsNames:
-  - "*.example.com"
+  - "*.trinity-healthware.com"
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
